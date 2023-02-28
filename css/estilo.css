@@ -1,0 +1,305 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+  
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(16, 122, 42));
+    font-family: 'Playfair Display', serif;
+    font-family: 'Zilla Slab', serif;
+}
+
+nav {
+  border-bottom: 10px;
+  background-color: aqua;
+}
+
+
+.container {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.8fr 0.2fr;
+  grid-auto-columns: 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "cuerpoPrincipal"
+    "Abajo";
+}
+
+.cuerpoPrincipal {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.6fr 1.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "izquierda derechaArriba derechaArriba"
+    "izquierda derechaArriba derechaArriba"
+    "izquierda derechaAbajo derechaAbajo";
+  grid-area: cuerpoPrincipal;
+}
+
+.izquierda { 
+  grid-area: izquierda; 
+  background-color: rgb(240, 246, 247);
+  margin: 5px;
+  padding: 0px;
+  border: 2px rgb(189, 91, 43);
+  border-radius: 5px;
+}
+
+.izquierda h2 {
+  color: rgb(83, 83, 83);
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.izquierda i{
+  color:rgb(43, 138, 122);
+  margin-left: 2%;
+}
+
+.derechaArriba { 
+  grid-area: derechaArriba;
+  background-color: rgb(244, 248, 248);
+  margin: 5px;
+  padding: 0px;
+  border: 2px rgb(199, 199, 199);
+  border-radius: 5px; 
+  
+  
+}
+
+.derechaArriba i{
+  color:rgb(43, 138, 122);
+  margin-left: 2%;
+
+}
+
+.derechaArriba p1{
+  color:rgb(43, 138, 122);
+  font-weight: 500;
+
+
+}
+
+.derechaArriba span{
+
+  background-color: rgb(12, 68, 68);
+  color:aliceblue; 
+  border: 2px solid rgb(12, 68, 68);
+  border-radius: 5px; 
+
+}
+
+.derechaAbajo { 
+  grid-area: derechaAbajo; 
+  background-color: rgb(244, 248, 248);
+  margin: 5px;
+  padding: 0px;
+  border: 2px rgb(199, 199, 199);
+  border-radius: 5px; 
+  
+}
+
+.derechaAbajo p1{
+  color:rgb(43, 138, 122);
+  font-weight: 500;
+}
+
+.derechaAbajo h2 {
+  color: rgb(83, 83, 83);
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 30px;
+
+}
+
+
+
+.derechaAbajo i{
+  color:rgb(43, 138, 122);
+  margin-left: 2%;
+
+}
+
+.Abajo { 
+  grid-area: Abajo;
+  background-color: rgb(1, 51, 51);
+  height: 15dvh;
+  margin: 5px;
+  padding: 0px;
+  border: 2px rgb(199, 199, 199);
+  border-radius: 5px; 
+  text-align: center;
+  list-style-type: none;
+
+ }
+ .Abajo h2{
+  color:aliceblue;
+  margin: 10px;
+}
+
+.Abajo i{
+
+color:rgb(97, 209, 130);
+padding: 5px;
+
+}
+
+.Abajo i:hover{
+
+  color:rgb(7, 1, 20);
+  
+  }
+
+
+h1
+{
+  color: rgb(83, 83, 83);
+  padding: 10px;
+  margin-top: 15px;
+
+}
+
+.h2
+{
+  color: rgb(83, 83, 83);
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.i{
+  color:rgb(43, 138, 122);
+  margin-left: 2%;
+}
+
+h3{
+  color: rgb(83, 83, 83);
+  margin-left: 10px;
+  padding: 15px;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.iconolist{
+  margin-left: 5%;
+}
+ 
+p{
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:rgb(12, 68, 68);
+  font-size: 17px;
+}
+
+.parrafodes{
+margin-left: 7%;
+margin-right: 7%;
+text-align: left;
+
+}
+
+hr{
+  color:rgb(43, 138, 122);
+  width: 90%;
+  margin: 10px;
+  margin-left: 7%;
+    
+}
+
+#demo{
+
+  display: none;
+
+}
+
+
+button {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: none;
+  color: rgb(83, 83, 83);
+  font-size: 20px;
+  font-family: 'Zilla Slab', serif;
+  font-weight: bold;
+  border-color: rgb(43, 138, 122);
+  border-radius: 5px;
+  
+
+}
+
+.izquierda button:hover{
+
+  background-color: rgb(43, 138, 122);
+  color: aliceblue;
+
+}
+
+.menu {
+list-style-type: none;
+color: rgb(83, 83, 83);
+text-align: right;
+
+
+}
+
+.menu li {
+
+  list-style-type: none;
+  
+}
+.menu li a {
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+  background-color: rgb(244, 248, 248);
+  padding: 3px;
+  display: block;
+  border-radius: 5px;
+  font-family: 'Zilla Slab', serif;
+}
+
+.menu li a:hover{
+  background-color:   rgb(43, 138, 122);
+  color:aliceblue
+
+}
+
+nav{
+  background-color: rgb(244, 248, 248);
+  padding: 16px;
+  border-color: black;
+}
+
+.menu > li {
+  float:right;
+}
+
+.menu li ul{
+  display: none;
+  position:relative;
+  min-width: 140px;
+
+
+
+}
+
+.menu li:hover > ul{
+  display: block;
+}
+
+.menu1 {
+  border-color: blue;
+}
+
+@media screen and (max-width:800px) {
+     .cuerpoPrincipal {
+      display: block;
+     }  
+}
